@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
- */
-
 const React = require('react');
 var DatePicker = require('./Daterangepicker');
 

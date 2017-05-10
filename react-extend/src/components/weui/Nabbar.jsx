@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
- */
-
 var React = require("react");
 var Link = require("react-router").Link;
 

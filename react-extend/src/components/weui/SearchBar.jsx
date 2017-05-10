@@ -1,11 +1,5 @@
-/*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
- */
-
 var React = require('react');
-var {addClass, removeClass} = require('../../extend');
+var {addClass, removeClass} = require('../../core');
 
 module.exports = class SearchBar extends React.Component {
 

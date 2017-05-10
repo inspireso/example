@@ -1,29 +1,30 @@
 {
   "name": "react-extend",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "react.js extend",
   "author": "lan.xinen@inspireso.cn",
   "license": "MIT",
-  "main": "./_index.js",
-  "engines": {
-    "node": ">=6",
-    "npm": ">=3.8"
+  "main": "index.js",
+  "keywords": [
+    "inspireso",
+    "react-extend",
+    "react",
+    "extend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inspireso/samples"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "bootstrap-daterangepicker": "^2.1.25",
-    "debug": "^2.6.0",
+    "jquery": "^2.2.3",
     "react": "^15.3.2"
   },
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
+    "debug": "^2.6.0"
   },
   "scripts": {
-    "test": "node test/run",
-    "clean": "node tools/run clean",
-    "build": "node tools/run build",
-    "copy": "node tools/run copy",
-    "publish": "node tools/run publish",
-    "deploy": "node tools/run deploy",
-    "start": "node tools/run --debug"
   }
 }

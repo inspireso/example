@@ -7,7 +7,8 @@
 const jquery = require('jquery');
 
 module.exports = {
-  initState: require('./StateManager'),
+  fetch: require('./src/fetch/jquery-fetch'),
+  initState: require('./src/state/StateManager'),
   extend: jquery.extend,
   Promise: jquery.Deferred(),
   when: jquery.when,

@@ -2,5 +2,5 @@
   "name": "calendar",
   "version": "0.0.0",
   "private": true,
-  "main": "./Calendar.jsx"
+  "main": "./Calendar.js"
 }

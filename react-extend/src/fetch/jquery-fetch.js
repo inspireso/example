@@ -36,7 +36,4 @@ var fetch = function (url, options) {
   });
 };
 
-module.exports = {
-  $: jquery,
-  fetch: fetch
-};
+module.exports = fetch;

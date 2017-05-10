@@ -2,5 +2,5 @@
   "name": "Toast",
   "version": "0.0.0",
   "private": true,
-  "main": "./Toast.jsx"
+  "main": "Toast.jsx"
 }

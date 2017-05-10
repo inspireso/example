@@ -1,13 +1,13 @@
-/*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
- */
-
 var React = require('react');
-var {addClass, removeClass} = require('../../extend');
+var PropTypes = require('prop-types');
+var {addClass, removeClass} = require('react-extend');
 
 module.exports = class SearchBar extends React.Component {
+
+  static propTypes = {
+    onSearch: PropTypes.func
+  };
+
   render() {
     return (
       <div ref="searchBar" className="weui-search-bar weui-search-bar_focusing">

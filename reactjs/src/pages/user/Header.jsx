@@ -6,8 +6,13 @@
 
 const React = require('react');
 const {Link} = require('react-router');
+var PropTypes = require('prop-types');
 
 module.exports = class Header extends React.Component {
+  static propTypes = {
+    onSearch: PropTypes.func
+  };
+
   constructor(props) {
     super(props);
   }

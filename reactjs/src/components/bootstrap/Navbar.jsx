@@ -1,7 +1,5 @@
 /*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
+ * Copyright (c) 2015, Inspireso and/or its affiliates. All rights reserved.
  */
 
 var React = require('react');

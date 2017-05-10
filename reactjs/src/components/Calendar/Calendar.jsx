@@ -1,12 +1,11 @@
 /*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
+ * Copyright (c) 2015, Inspireso and/or its affiliates. All rights reserved.
  */
 
 'use strict';
 
 var React = require("react");
+var PropTypes = require('prop-types');
 var $ = require("jquery");
 require("fullcalendar");
 require("fullcalendar/dist/locale-all.js");
@@ -18,6 +17,10 @@ var style = {
 };
 
 module.exports = class Calendar extends React.Component {
+  static propTypes = {
+    options: PropTypes.object.isRequired
+  };
+
   componentDidMount() {
     $(this.refs.calendar).fullCalendar(this.props.options);
   }

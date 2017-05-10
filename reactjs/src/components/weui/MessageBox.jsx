@@ -1,13 +1,11 @@
 /*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
+ * Copyright (c) 2015, Inspireso and/or its affiliates. All rights reserved.
  */
 
 'use strict';
 
 var React = require('react');
-var extend = require('../../extend').extend;
+var extend = require('../../core').extend;
 
 module.exports = class MessageBox extends React.Component {
 

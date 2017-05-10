@@ -1,12 +1,12 @@
 /*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
+ * Copyright 2016 Inspireso and/or its affiliates.
  * Licensed under the MIT License.
- *
  */
 
 'use strict';
 
 var React = require('react');
+var PropTypes = require('prop-types');
 var Handlebars = require('handlebars/dist/handlebars');
 var Bloodhound = require('typeahead.js/dist/bloodhound');
 var $ = require('jquery');
@@ -117,6 +117,15 @@ var config = {
 };
 
 class Typeahead extends React.Component {
+  static propTypes = {
+    defaultValue: PropTypes.any
+    , className: PropTypes.string
+    , placeholder: PropTypes.string
+    , onKeyUp: PropTypes.func
+    , onSelect: PropTypes.func
+    , onChange: PropTypes.func
+  };
+
   componentDidMount() {
     var $input = $(this.refs.typeahead);
     var options = this.props.options || config.options;

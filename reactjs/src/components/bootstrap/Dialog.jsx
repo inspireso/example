@@ -1,13 +1,12 @@
 /*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
+ * Copyright (c) 2015, Inspireso and/or its affiliates. All rights reserved.
  */
 
 'use strict';
 
 var React = require('react');
 var $ = require('jquery');
+var PropTypes = require('prop-types');
 
 class BootstrapButton extends React.Component {
   render() {
@@ -21,6 +20,15 @@ class BootstrapButton extends React.Component {
 }
 
 module.exports = class Dialog extends React.Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired
+    , cancel: PropTypes.string
+    , confirm: PropTypes.string
+    , onHidden: PropTypes.func
+    , onCancel: PropTypes.func
+    , onConfirm: PropTypes.func
+  };
+
   constructor(props) {
     super(props);
   }

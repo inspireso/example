@@ -40,7 +40,7 @@ module.exports = class Topic extends React.Component {
     }
 
     var list = this.state.list && this.state.list.length > 0 ?
-      <UserList list={this.state.list} delete={this.delete.bind(this)}/> : <div/>
+      <UserList list={this.state.list} onDelete={this.delete.bind(this)}/> : <div/>
     return (
       <div className="container-fluid">
         <Header onSearch={this.search.bind(this)}

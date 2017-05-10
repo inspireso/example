@@ -1,16 +1,21 @@
 /*
- * Copyright (c) 2017 Inspireso and/or its affiliates.
- * Licensed under the MIT License.
- *
+ * Copyright (c) 2015, Inspireso and/or its affiliates. All rights reserved.
  */
 
 'use strict';
 
 var React = require('react');
 var Link = require('react-router').Link;
-
+var PropTypes = require('prop-types');
 
 module.exports = class Pager extends React.Component {
+  static propTypes = {
+    refresh: PropTypes.func.isRequired,
+    page: PropTypes.object.isRequired,
+    links: PropTypes.object.isRequired
+  };
+
+
   render() {
     let previousDisabled = this.props.links.prev ? null : 'disabled';
     let nextDisabled = this.props.links.next ? null : 'disabled';

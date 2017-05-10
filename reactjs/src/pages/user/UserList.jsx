@@ -9,6 +9,11 @@ const {Link} = require('react-router');
 const api = require('../../data/webapi');
 
 module.exports = class UserList extends React.Component {
+  static propTypes = {
+    list: PropTypes.array,
+    onDelete: PropTypes.func
+  };
+
   constructor(props) {
     super(props);
   }
@@ -53,7 +58,7 @@ module.exports = class UserList extends React.Component {
   handleClick(e) {
     api.user.delete(e.currentTarget.id)
       .then(response => {
-        this.props.delete(response);
+        this.props.onDelete(response);
       });
 
   }

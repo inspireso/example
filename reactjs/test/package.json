@@ -1,6 +1,6 @@
 {
-  "name": "core",
+  "name": "waiting",
   "version": "0.0.0",
   "private": true,
-  "main": "./index.js"
+  "main": "./run.js"
 }

@@ -2,7 +2,7 @@
  * Copyright (c) 2016, Inspireso and/or its affiliates. All rights reserved.
  */
 
-package org.inspireso.cloud.customer;
+package org.inspireso.cloud.user;
 
 import org.inspireso.remoting.client.RemotingClient;
 import org.inspireso.remoting.http.HttpSender;

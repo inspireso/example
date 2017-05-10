@@ -6,6 +6,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const pkg = require('./package.json');
 
@@ -19,7 +20,7 @@ const config = {
     // Options affecting the output of the compilation
     output: {
       path: path.resolve(__dirname, './build/assets'),
-      filename: 'js/[name].js?[hash]',
+      filename: 'js/[name]-[hash].js',
       chunkFilename: 'js/[hash]/[id].js'
     },
 
@@ -48,10 +49,19 @@ const config = {
     },
 
     plugins: [
+      // new webpack.optimize.UglifyJsPlugin({
+      //   sourceMap: true,
+      //   output: {comments: false},
+      //   compress: {screw_ie8: true, warnings: true}
+      // }),
       new ExtractTextPlugin({
-        filename: 'css/[name].css?[hash]',
+        filename: 'css/[name]-[hash].css',
         disable: false,
         allChunks: true
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'demo2.html',
+        template: path.resolve(__dirname, './demo2.html')
       })
     ],
 

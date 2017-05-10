@@ -6,7 +6,6 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const pkg = require('./package.json');
 
 const config = {
@@ -47,7 +46,11 @@ const config = {
       ]
     },
 
-    plugins: [],
+    plugins: [
+
+      // new HtmlWebpackPlugin(),
+
+    ],
 
     resolve: {
       modules: [

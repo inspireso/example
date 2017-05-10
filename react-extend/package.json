@@ -1,0 +1,29 @@
+{
+  "name": "react-extend",
+  "version": "1.0.0",
+  "description": "react.js extend",
+  "author": "lan.xinen@inspireso.cn",
+  "license": "MIT",
+  "main": "./_index.js",
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3.8"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-daterangepicker": "^2.1.25",
+    "debug": "^2.6.0",
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "node test/run",
+    "clean": "node tools/run clean",
+    "build": "node tools/run build",
+    "copy": "node tools/run copy",
+    "publish": "node tools/run publish",
+    "deploy": "node tools/run deploy",
+    "start": "node tools/run --debug"
+  }
+}
